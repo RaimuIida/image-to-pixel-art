@@ -1,53 +1,12 @@
-# Haskell (Community)
+# ImageToPixelArt
 
-_This definition will hopefully get you going quickly with Haskell running as a remote container in vscode_
+[![Open in Remote - Containers](https://img.shields.io/static/v1?label=Remote%20-%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/RaimuIida/image-to-pixel-art)
 
-## Summary
+## Image to pixel art conversion tool
 
-[Haskell](https://www.haskell.org/) is an advanced, purely functional programming language
-
-
-| Metadata                    | Value                                                                        |
-|---------------------------- | -----------------------------------------------------------------------------|
-| *Contributors*              | [Stuart Pike](https://github.com/stuartpike), [Javier Neira](https://github.com/jneira), [eitsupi](https://github.com/eitsupi) |
-| *Categories*                | Community, Haskell |
-| *Definition type*           | Dockerfile |
-| *Works in Codespaces*       | Yes |
-| *Container host OS support* | Linux, macOS, Windows |
-| *Container OS*              | Debian |
-| *Languages, platforms*      | Haskell |
-
-
-## Using this definition
-
-While the definition itself works unmodified, you can select the version of Haskell the container uses by updating the `VARIANT` arg in the included `.devcontainer/devcontainer.json` file.
-
-```json
-"build": {
-    "dockerfile": "Dockerfile",
-    "args": {
-        "VARIANT": "9"
-    }
-}
-```
-
-### Adding the definition to a project or codespace
-
-1. If this is your first time using a development container, please see getting started information on [setting up](https://aka.ms/vscode-remote/containers/getting-started) Remote-Containers or [creating a codespace](https://aka.ms/ghcs-open-codespace) using GitHub Codespaces.
-
-2. Start VS Code and open your project folder or connect to a codespace.
-
-3. Press <kbd>F1</kbd> select and **Add Development Container Configuration Files...** command for **Remote-Containers** or **Codespaces**.
-
-   > **Note:** If needed, you can drag-and-drop the `.devcontainer` folder from this sub-folder in a locally cloned copy of this repository into the VS Code file explorer instead of using the command.
-
-4. Select this definition. You may also need to select **Show All Definitions...** for it to appear.
-
-5. Finally, press <kbd>F1</kbd> and run **Remote-Containers: Reopen Folder in Container** or **Codespaces: Rebuild Container** to start using the definition.
-
+If you already have VS Code and Docker installed, you can click the badge above or [here](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/RaimuIida/image-to-pixel-art) to get started. Clicking these links will cause VS Code to automatically install the Remote - Containers extension if needed, clone the source code into a container volume, and spin up a dev container for use.
 
 ## License
 
-Copyright (c) Microsoft Corporation. All rights reserved.
-
-Licensed under the MIT License. See [LICENSE](https://github.com/Microsoft/vscode-dev-containers/blob/main/LICENSE).
+Copyright © Raimu Iida All rights reserved.<br />
+Licensed under the MIT License. See LICENSE in the project root for license information.
