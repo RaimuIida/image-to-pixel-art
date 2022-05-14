@@ -1,7 +1,7 @@
 # Use the [Choice] comment to indicate option arguments that should appear in VS Code UX
 #
 # [Choice] Haskell version: 9, 8
-ARG VARIANT=8
+ARG VARIANT=9
 FROM haskell:${VARIANT}
 
 # Use the [Option] comment to specify true/false arguments that should appear in VS Code UX
@@ -9,7 +9,7 @@ FROM haskell:${VARIANT}
 # [Option] Install zsh
 ARG INSTALL_ZSH="true"
 # [Option] Upgrade OS packages to their latest versions
-ARG UPGRADE_PACKAGES="false"
+ARG UPGRADE_PACKAGES="true"
 
 # Install needed packages and setup non-root user. Use a separate RUN statement to add your own dependencies
 ARG USERNAME=vscode
