@@ -1,0 +1,48 @@
+name:                image-to-pixel-art
+version:             0.1.0.0
+github:              "RaimuIida/image-to-pixel-art"
+license:             MIT
+author:              "Raimu Iida"
+maintainer:          "79499444+RaimuIida@users.noreply.github.com"
+copyright:           "Copyright (c) 2022 Raimu Iida"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/RaimuIida/image-to-pixel-art#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+executables:
+  image-to-pixel-art-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - image-to-pixel-art
+
+tests:
+  image-to-pixel-art-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - image-to-pixel-art
