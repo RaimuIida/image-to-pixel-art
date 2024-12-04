@@ -4,11 +4,11 @@ github:              "RaimuIida/image-to-pixel-art"
 license:             MIT
 author:              "Raimu Iida"
 maintainer:          "79499444+RaimuIida@users.noreply.github.com"
-copyright:           "Copyright (c) 2022 Raimu Iida"
+copyright:           "2024 Raimu Iida"
 
 extra-source-files:
 - README.md
-- ChangeLog.md
+- CHANGELOG.md
 
 # Metadata used when publishing your package
 # synopsis:            Short description of your package
@@ -21,6 +21,17 @@ description:         Please see the README on GitHub at <https://github.com/Raim
 
 dependencies:
 - base >= 4.7 && < 5
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-export-lists
+- -Wmissing-home-modules
+- -Wpartial-fields
+- -Wredundant-constraints
 
 library:
   source-dirs: src
